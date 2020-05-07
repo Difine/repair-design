@@ -15,12 +15,13 @@ const autoprefixer = require('gulp-autoprefixer');
     });
     watch("./*.html").on('change', browserSync.reload);
     watch("./sass/**/*.sass", serveSass);
+    watch("./sass/**/*.scss", serveSass);
     watch("./js/*.js").on('change', browserSync.reload);
     watch("./css/*.css", styles);
   };
 
   function serveSass() {
-    return src("./sass/*.sass")
+    return src("./sass/**/*.sass", "./sass/**/*.scss")
         .pipe(sass())
         .pipe(autoprefixer({
           cascade: false }))
