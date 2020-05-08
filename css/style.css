@@ -474,6 +474,7 @@ body {
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 40px; }
   .title--primary {
