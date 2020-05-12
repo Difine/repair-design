@@ -363,7 +363,8 @@ img {
   .section-title {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.95rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -553,6 +554,22 @@ img {
   background-color: #E3B873;
   color: #fff;
   padding: 1.214rem 2.6rem; }
+
+.design__section-title {
+  margin-bottom: 1.31rem; }
+
+.design__description {
+  margin: 0 auto;
+  margin-bottom: 3.3rem;
+  max-width: 52rem;
+  font-family: 'Futura Book', sans-serif;
+  font-weight: normal;
+  font-size: 1.429rem;
+  line-height: 1.92rem;
+  text-align: center; }
+
+.design__card__pricetag {
+  min-width: 16.2rem; }
 
 @media screen and (max-width: 1320px) {
   html {
