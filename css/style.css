@@ -585,8 +585,10 @@ img {
     align-items: center; }
   .types__card {
     margin-bottom: 5rem; }
-  .design__card {
-    margin-bottom: 5rem; }
+  .design {
+    background: #131313; }
+    .design__card {
+      margin-bottom: 5rem; }
   .card__text {
     margin-left: 0; } }
 
@@ -618,15 +620,13 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
-  .design {
-    background: #131313; }
-    .design__description {
-      min-width: 21.85rem;
-      font-size: 1.3rem;
-      color: #fff; }
-    .design__title__heading {
-      color: #fff;
-      font-weight: normal; }
+  .design__description {
+    min-width: 21.85rem;
+    font-size: 1.3rem;
+    color: #fff; }
+  .design__title__heading {
+    color: #fff;
+    font-weight: normal; }
   .card__text {
     max-width: 19.3rem; } }
 
