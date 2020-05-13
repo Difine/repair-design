@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   modalBtn.forEach(element => {
     element.addEventListener('click', switchModal);
   });
-  closeBtn. addEventListener('click', switchModal);
-
-  console.log(modalBtn)
+  closeBtn.addEventListener('click', switchModal);
+  document.body.addEventListener('keyup', function (e) {
+    let key = e.keyCode;
+    if (key == 27) {
+      modal.classList.remove('modal--visible');
+    };
+  });
 });
