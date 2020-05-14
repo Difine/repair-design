@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+/*document.addEventListener("DOMContentLoaded", function(event) { 
   const modal = document.querySelector(".modal");
   const modalBtn = document.querySelectorAll('[data-toggle=modal]')
   const closeBtn = document.querySelector('.modal__close');
@@ -21,4 +21,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
       modal.classList.remove('modal--visible');
     };
   };
+});
+*/
+
+$(document).ready(function () {
+  var  modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn = $('.modal__close');
+      
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible')
+  });
+  closeBtn.on('click', function() {
+    modal.toggleClass('modal--visible')
+  })
 });
