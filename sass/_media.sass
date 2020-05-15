@@ -5,9 +5,6 @@
     &__item
       margin-right: 1rem
 @media screen and ( max-width: 1050px )
-  .row
-    flex-direction: column
-    align-items: center
   .types
     &__card
       margin-bottom: 5rem
@@ -18,17 +15,32 @@
   .card
     &__text
       margin-left: 0    
-  .col-50
-    margin-bottom: 1.5rem
-    min-width: 70%   
 @media screen and ( max-width: 992px )
+  .row
+    flex-direction: column
+    align-items: center
   .nav
     display: none 
   .hero
     &__instagram
       display: none
     &__content
-      margin-left: 0     
+      margin-left: 0   
+  .col-35
+    margin-bottom: 1.5rem
+    min-width: 90% 
+  .col-60
+    margin-bottom: 1.5rem
+    min-width: 90% 
+  .section
+    &-title
+      &__text
+        max-width: 21.7rem
+        font-size: 1.1rem  
+  .swiper
+    &-container
+      &__photo
+      margin-left: 0  
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -61,21 +73,6 @@
       font-weight: normal
   .card__text
     max-width: 19.3rem
-  .col-35
-    margin-bottom: 1.5rem
-    min-width: 90% 
-  .col-60
-    margin-bottom: 1.5rem
-    min-width: 90% 
-  .section
-    &-title
-      &__text
-        max-width: 21.7rem
-        font-size: 1.1rem  
-  .swiper
-    &-container
-      &__photo
-      margin-left: 0
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down

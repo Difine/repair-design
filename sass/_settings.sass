@@ -1,6 +1,6 @@
 *, *:before, *:after
   box-sizing: border-box
-h1, h2, h3, h4
+h1, h2, h3, h4, p
   margin: 0
 html
   font-size: 14px
@@ -15,6 +15,10 @@ img
     color: $light
   &-title
     text-align: center
+    &__suptitle
+      text-transform: uppercase
+      font-weight: normal
+      margin-bottom: 1.3rem
     &--left
       text-align: left
     &__heading
@@ -22,10 +26,12 @@ img
       font-family: 'Yeseva One', cursive
       font-weight: normal
       line-height: 150%
-      font-size: 1.75rem
-      margin-bottom: 1.58rem
+      font-size: 1.45rem
+      margin-bottom: 1rem
       &--primary
         color: $primary
+        font-size: 1.75rem
+        margin-bottom: 1.58rem
     &__word
       display: flex
       align-items: center
