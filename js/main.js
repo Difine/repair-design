@@ -63,6 +63,6 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets= $('.swiper-container-horizontal > .swiper-pagination-bullets');
 
-  next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10)
+  next.css('left', prev.width() + 24 + bullets.width() + 13)
+  bullets.css('left', prev.width() + 21)
 });

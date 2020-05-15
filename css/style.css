@@ -417,8 +417,17 @@ template {
   flex-basis: 50%;
   width: 50%; }
 
+.col-35 {
+  width: 35%; }
+
+.col-60 {
+  width: 60%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
+
+h1, h2, h3, h4 {
+  margin: 0; }
 
 html {
   font-size: 14px; }
@@ -442,7 +451,9 @@ img {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
-    line-height: 138.6%; }
+    line-height: 150%;
+    font-size: 1.75rem;
+    margin-bottom: 1.58rem; }
     .section-title__heading--primary {
       color: #E3B873; }
   .section-title__word {
@@ -453,11 +464,12 @@ img {
       width: 90px;
       height: 2px;
       background-color: #E3B873;
-      margin-left: 2rem; }
+      margin-left: 2.3rem; }
   .section-title__text {
     font-size: 1.28rem;
     line-height: 2.07rem;
-    max-width: 31.57rem; }
+    max-width: 31.57rem;
+    margin-bottom: 3.4rem; }
   .section-title__image {
     display: flex;
     justify-content: center;
@@ -726,23 +738,40 @@ img {
     width: 15rem;
     height: 3.5rem; }
 
+.projects {
+  padding: 6rem 0 6rem; }
+
+.swiper-container__photo {
+  margin-left: 3.85rem; }
+
+.swiper-wrapper {
+  margin-bottom: 4.5rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
-    flex: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    flex-basis: 40%;
+    width: 13.28rem;
+    margin-right: 0.9rem;
+    margin-bottom: 2.88rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
+    text-transform: uppercase;
     color: #E3B873;
     margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem; }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 0.75rem;
+  height: 0.7rem;
+  margin-right: 2rem; }
   .swiper-pagination-bullet-active {
     background-color: #fff; }
 
@@ -765,6 +794,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px; }
 
 @media screen and (max-width: 1320px) {
   html {
