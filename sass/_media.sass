@@ -41,7 +41,12 @@
     &-container
       &__photo
       margin-left: 0  
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 768px )
+  .control
+    &__container
+      width: 96%
+
+@media screen and ( max-width: 576px )
   .contacts
     &__phone
       margin-right: 0
@@ -73,6 +78,32 @@
       font-weight: normal
   .card__text
     max-width: 19.3rem
+  .control
+    background-color: $dark
+    &__form
+      justify-content: center
+    &__text
+      color: $light
+    &__input-group
+      flex-basis: 90%
+    &__label
+      color: rgba($light, 0.5)
+      margin-bottom: 4px
+    &__input
+      &::placeholder
+        color: $light
+      &-group
+        margin-bottom: 2rem
+    &__policy
+      margin: 0
+      margin-bottom: 3.5rem
+      &-label
+        color: $light
+        justify-content: flex-start
+        margin-left: 5%
+    &__button
+      width: 90%
+      order: 5
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
