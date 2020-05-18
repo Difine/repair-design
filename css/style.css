@@ -915,6 +915,28 @@ img {
   padding: 0;
   z-index: 1; }
 
+@-webkit-keyframes slideRightLeft {
+  0% {
+    margin-right: -125px; }
+  70% {
+    margin-right: 30px; }
+  100% {
+    margin-left: 0px; } }
+
+@keyframes slideRightLeft {
+  0% {
+    margin-right: -125px; }
+  70% {
+    margin-right: 30px; }
+  100% {
+    margin-left: 0px; } }
+
+.anim__slideRightLeft {
+  -webkit-animation-name: slideRightLeft;
+  animation-name: slideRightLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
 @media screen and (max-width: 1320px) {
   html {
     font-size: 12px; }

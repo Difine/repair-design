@@ -90,4 +90,31 @@ $(document).ready(function () {
 
   new WOW().init();
 
+    var block_show = false;
+  
+  function scrollTracking(){
+    if (block_show) {
+      return false;
+    }
+  
+    var wt = $(window).scrollTop();
+    var wh = $(window).height();
+    var et = $('#section-title').offset().top;
+    var eh = $('#section-title').outerHeight();
+    var dh = $(document).height();   
+  
+    if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+      block_show = true;
+      document.querySelector('.control__section-title').classList.add("anim__slideRightLeft");
+    }
+  }
+  
+  $(window).scroll(function(){
+    scrollTracking();
+  });
+    
+  $(document).ready(function(){ 
+    scrollTracking();
+  });
+
 });
