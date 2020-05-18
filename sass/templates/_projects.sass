@@ -1,5 +1,5 @@
 .projects
-  padding: 6rem 0 6rem
+  padding: 6rem 0 30rem
 .swiper
   &-container
     &__photo
@@ -34,7 +34,7 @@
       &-active
         background-color: $light
   &-button 
-    &-prev, &-next
+    &-prev, &-next, &-prev1, &-next1
       bottom: 0
       top: auto
       background-size: 42px
@@ -42,10 +42,10 @@
       height: 14px
       &::after
         display: none
-    &-prev
+    &-prev, &-prev1
       left: 0
       background: url('../img/arrow-prev.svg') no-repeat center
-    &-next
+    &-next, &-next1
       background: url('../img/arrow-next.svg') no-repeat center
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto

@@ -51,18 +51,43 @@ $(document).ready(function () {
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '#pagination',
       type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '#next',
+      prevEl: '#prev',
     },
   })
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
+  var next = $('#next');
+  var prev = $('#prev');
   var bullets= $('.swiper-container-horizontal > .swiper-pagination-bullets');
-
   next.css('left', prev.width() + 24 + bullets.width() + 13)
   bullets.css('left', prev.width() + 21)
+
+  var mySwiper1 = new Swiper ('.swiper-container1', {
+    loop: true,
+    pagination: {
+      el: '#pagination1',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '#next1',
+      prevEl: '#prev1',
+    },
+  })
+  var next1 = $('#next1');
+  var prev1 = $('#prev1');
+  var bullets1= $('#pagination1');
+  next1.css('left', prev1.width() + 24 + bullets1.width() + 13)
+  bullets1.css('left', prev1.width() + 21)
+
+  document.querySelector('.slide-to').addEventListener('click', () => {
+    mySwiper1.slideTo[4,4];
+  });
+  console.log('.slide-to');
+
+
+  new WOW().init();
+
 });
