@@ -83,9 +83,8 @@ $(document).ready(function () {
   bullets1.css('left', prev1.width() + 21)
 
   document.querySelector('.slide-to').addEventListener('click', () => {
-    mySwiper1.slideTo[4,4];
+    console.log(mySwiper1);
   });
-  console.log('.slide-to');
 
 
   new WOW().init();

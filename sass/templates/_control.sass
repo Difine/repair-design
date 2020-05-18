@@ -2,7 +2,7 @@
   padding-bottom: 10.1rem
   &__section-title
     margin-bottom: 2.214rem
-    margin-top: -25rem
+    margin-top: -23.5rem
   &__video
     position: relative
     display: flex
@@ -44,8 +44,12 @@
     display: flex
     flex-direction: column
     flex-basis: 30%
+  &__input
+      &::placeholder
+        color: $dark
   &__label
     margin-bottom: -6px
+    color: rgba($dark, 0.5)
   &__button
     padding: 1.2857rem 4.7857rem
   &__policy
@@ -53,7 +57,9 @@
     margin-top: 1.2rem
     &-label
       justify-content: center
+      margin-left: -4.5rem
 .video
   &__play
     position: relative
     margin: auto
+    cursor: pointer
