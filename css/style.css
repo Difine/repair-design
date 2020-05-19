@@ -685,16 +685,18 @@ img {
     display: flex;
     flex-direction: column;
     flex-basis: 30%; }
-  .control__input::-webkit-input-placeholder {
+  .control__input {
     color: #131313; }
-  .control__input::-moz-placeholder {
-    color: #131313; }
-  .control__input:-ms-input-placeholder {
-    color: #131313; }
-  .control__input::-ms-input-placeholder {
-    color: #131313; }
-  .control__input::placeholder {
-    color: #131313; }
+    .control__input::-webkit-input-placeholder {
+      color: #131313; }
+    .control__input::-moz-placeholder {
+      color: #131313; }
+    .control__input:-ms-input-placeholder {
+      color: #131313; }
+    .control__input::-ms-input-placeholder {
+      color: #131313; }
+    .control__input::placeholder {
+      color: #131313; }
   .control__label {
     margin-bottom: -6px;
     color: rgba(19, 19, 19, 0.5); }
@@ -1035,6 +1037,8 @@ img {
     .control__text {
       color: #fff;
       font-size: 1.4rem; }
+    .control__input {
+      color: #fff; }
     .control__input-group {
       flex-basis: 90%; }
     .control__label {
@@ -1062,7 +1066,19 @@ img {
     .control__button {
       margin-bottom: -1.6rem;
       width: 96%;
-      order: 5; } }
+      order: 5; }
+    .control__video {
+      max-width: 100%;
+      max-height: 100%;
+      width: 340px;
+      min-height: 207px;
+      background: #131313 url("../img/video-mask.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+  .video__play {
+    width: 5rem;
+    height: 5rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
