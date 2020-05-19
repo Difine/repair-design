@@ -381,6 +381,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 #scroll_top {
   display: none;
@@ -396,6 +398,12 @@ template {
 
 #scroll_top:hover {
   opacity: 1; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
@@ -773,6 +781,52 @@ img {
   .design__card__pricetag {
     min-width: 16.2rem; }
 
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.25rem; }
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.2rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.22rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2.22rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem;
+    margin-left: -0.8rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.2rem 4.3rem;
+    font-size: 1.1rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 3.6rem 0; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -820,10 +874,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.413rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 0rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 0rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -1078,7 +1134,21 @@ img {
       background-repeat: no-repeat; }
   .video__play {
     width: 5rem;
-    height: 5rem; } }
+    height: 5rem; }
+  .footer {
+    background: #131313; }
+    .footer__wrap {
+      background-color: #131313;
+      padding: 0; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__policy__label {
+      justify-content: flex-start;
+      margin-left: 3%; }
+    .footer__button {
+      width: 100%; }
+    .footer__menu {
+      display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

@@ -53,6 +53,8 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+    &--center
+      justify-content: center
 #scroll_top 
 	display: none
 	position: fixed
@@ -66,3 +68,10 @@
 	opacity: 0.5
 #scroll_top:hover 
   opacity: 1
+
+label
+  &.invalid
+    color: tomato
+input
+    &.invalid
+      border-bottom: 1px solid tomato

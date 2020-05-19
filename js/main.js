@@ -82,11 +82,6 @@ $(document).ready(function () {
   next1.css('left', prev1.width() + 24 + bullets1.width() + 13)
   bullets1.css('left', prev1.width() + 21)
 
-  document.querySelector('.slide-to').addEventListener('click', () => {
-    console.log(mySwiper1);
-  });
-
-
   new WOW().init();
 
     var block_show = false;
@@ -115,5 +110,81 @@ $(document).ready(function () {
   $(document).ready(function(){ 
     scrollTracking();
   });
+
+  //Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило-обьект (сообщения)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+  // Валидация формы в подвале
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      footerUserName: {
+        required: true,
+        minlength: 2
+      },
+      footerUserPhone: "required",
+      // правило-обьект (сообщения)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      footerUserName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв"
+      },
+      footerUserPhone: "Заполните поле",
+    }
+  });
+  // Валидация формы в контроле
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      controlUserName: {
+        required: true,
+        minlength: 2
+      },
+      controlUserPhone: "required",
+      // правило-обьект (сообщения)
+    },
+    messages: {
+      controlUserName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв"
+      },
+      controlUserPhone: "Заполните поле",
+    }
+  });
+
+  // маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
 
 });
