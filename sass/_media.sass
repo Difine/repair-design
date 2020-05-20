@@ -1,10 +1,12 @@
-@media screen and ( max-width: 1320px )
+@media screen and ( max-width: 1345px )
   html
-    font-size: 12px
+    font-size: 11px
   .nav
     &__item
       margin-right: 1rem
-@media screen and ( max-width: 1050px )
+@media screen and ( max-width: 1070px )
+  html
+    font-size: 10px
   .types
     &__card
       margin-bottom: 5rem
@@ -20,6 +22,10 @@
       color: $light
     &__title__heading
       color: $light
+  .clients
+    &__card
+      height: 33rem
+  
 @media screen and ( max-width: 992px )
   .row
     flex-direction: column
@@ -48,6 +54,7 @@
       margin-left: 0 
   .team
     background: $dark
+    padding-bottom: 17rem
     &__wrap
       flex-direction: column
     &__card
@@ -56,6 +63,8 @@
     &__description
       &--bottom
         display: none
+  .clients
+    display: none
 @media screen and ( max-width: 768px )
   .control
     &__container

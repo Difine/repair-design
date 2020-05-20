@@ -1035,9 +1035,9 @@ img {
   z-index: 1; }
 
 .team {
-  background: linear-gradient(to top, #fff 60%, #131313 40%);
+  background: linear-gradient(to top, #fff 50%, #131313 50%);
   padding-top: 4rem;
-  padding-bottom: 18rem;
+  padding-bottom: 1rem;
   color: #fff; }
   .team__section-title {
     margin-top: 2rem;
@@ -1117,6 +1117,99 @@ img {
       color: #fff;
       background-color: #E3B873; }
 
+.clients {
+  padding-bottom: 28rem; }
+  .clients__title__image {
+    margin-bottom: 1.25rem; }
+  .clients__description {
+    margin: 0 auto;
+    margin-bottom: 3.3rem;
+    max-width: 25rem;
+    font-family: 'Futura Book', sans-serif;
+    font-weight: normal;
+    font-size: 1.429rem;
+    line-height: 1.92rem;
+    text-align: center;
+    margin-bottom: 3.3rem; }
+  .clients__photo {
+    width: 100%;
+    border-radius: 50%; }
+  .clients__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .clients__card {
+    margin-bottom: 6rem;
+    height: 30.57rem;
+    width: 26.85rem;
+    position: relative;
+    min-height: 30.6rem;
+    padding: 24px 28px 63px 20px;
+    font-style: normal;
+    font-weight: normal;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
+    .clients__card__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.1rem; }
+    .clients__card__photo {
+      width: 76px;
+      height: 76px; }
+    .clients__card__name {
+      padding-right: 0.4rem;
+      max-width: 15rem;
+      margin-left: 1.75rem;
+      font-family: Yeseva One, cursive;
+      font-size: 1.3rem;
+      line-height: 1.8rem; }
+    .clients__card__callback {
+      font-family: 'Futura Book', sans-serif;
+      color: #959595;
+      font-size: 1.08rem;
+      line-height: 1.98rem; }
+    .clients__card__data {
+      position: absolute;
+      left: 0rem;
+      bottom: -2.2rem;
+      display: flex;
+      color: #fff; }
+    .clients__card__size {
+      background-color: #E3B873;
+      font-size: 1.25rem;
+      line-height: 1.7rem;
+      display: flex;
+      align-items: center;
+      margin-right: 2px;
+      padding: 0.714rem 1.571rem 0.714rem 1.285rem; }
+      .clients__card__size::before {
+        margin-right: 14px;
+        content: "";
+        background-image: url("/img/clients/size.svg");
+        background-size: 32px 32px;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat; }
+    .clients__card__time {
+      background-color: #E3B873;
+      font-size: 1.25rem;
+      line-height: 1.7rem;
+      display: flex;
+      align-items: center;
+      padding: 0.714rem 1.571rem 0.714rem 1.285rem; }
+      .clients__card__time::before {
+        margin-right: 10px;
+        content: "";
+        background-image: url("/img/clients/time.svg");
+        background-size: 32px 32px;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat; }
+    .clients__card__time {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      text-transform: uppercase; }
+
 @-webkit-keyframes slideRightLeft {
   0% {
     margin-right: -125px; }
@@ -1139,13 +1232,15 @@ img {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1345px) {
   html {
-    font-size: 12px; }
+    font-size: 11px; }
   .nav__item {
     margin-right: 1rem; } }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1070px) {
+  html {
+    font-size: 10px; }
   .types__card {
     margin-bottom: 5rem; }
   .design {
@@ -1157,7 +1252,9 @@ img {
   .design__description {
     color: #fff; }
   .design__title__heading {
-    color: #fff; } }
+    color: #fff; }
+  .clients__card {
+    height: 33rem; } }
 
 @media screen and (max-width: 992px) {
   .row {
@@ -1181,14 +1278,17 @@ img {
   .swiper-container {
     margin-left: 0; }
   .team {
-    background: #131313; }
+    background: #131313;
+    padding-bottom: 17rem; }
     .team__wrap {
       flex-direction: column; }
     .team__card {
       margin-bottom: 4rem;
       max-width: 35rem; }
     .team__description--bottom {
-      display: none; } }
+      display: none; }
+  .clients {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .control__container {
