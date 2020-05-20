@@ -118,25 +118,39 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17,
+      },
+      policyCheckbox: "required",
       // правило-обьект (сообщения)
       userEmail: {
         required: true,
         email: true
       }
     },
+    errorElement: "div",
     messages: {
       userName: {
         required: "Заполните поле",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: "Заполните поле",
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      policyCheckbox: "Подтвердите обработку данных",
+    },
+    errorPlacement: function(error, element) { 
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+    }
+    error.insertAfter($(element));
     }
   });
   // Валидация формы в подвале
@@ -146,22 +160,36 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       footerUserName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
-      footerUserPhone: "required",
+      footerUserPhone: {
+        required: true,
+        minlength: 17,
+      },
+      footerPolicyCheckbox: "required",
       // правило-обьект (сообщения)
       userEmail: {
         required: true,
         email: true
       }
     },
+    errorElement: "div",
     messages: {
       footerUserName: {
         required: "Заполните поле",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
       },
       footerUserPhone: "Заполните поле",
+      footerPolicyCheckbox: "Подтвердите обработку данных",
+    },
+    errorPlacement: function(error, element) { 
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
     }
+    error.insertAfter($(element));
+    }  
   });
   // Валидация формы в контроле
   $('.control__form').validate({
@@ -170,21 +198,35 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       controlUserName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
-      controlUserPhone: "required",
+      controlUserPhone: {
+        required: true,
+        minlength: 17,
+      },
+      controlPolicyCheckbox: "required",
       // правило-обьект (сообщения)
     },
+    errorElement: "div",
     messages: {
       controlUserName: {
         required: "Заполните поле",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
       },
       controlUserPhone: "Заполните поле",
+      controlPolicyCheckbox: "Подтвердите обработку данных",
+    },
+    errorPlacement: function(error, element) { 
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+    }
+    error.insertAfter($(element));
     }
   });
 
   // маска для номера телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
 
 });
