@@ -473,6 +473,9 @@ body {
   font-size: 1rem;
   font-weight: normal; }
 
+a {
+  text-decoration: none; }
+
 img {
   max-width: 100%; }
 
@@ -868,6 +871,8 @@ img {
       margin-bottom: 3rem; }
     .footer__contacts__link {
       margin: 0 0.5rem; }
+    .footer__contacts__phone {
+      color: #E3B873; }
   .footer__map {
     min-height: 33rem;
     width: 95%;
@@ -1118,7 +1123,7 @@ img {
       background-color: #E3B873; }
 
 .clients {
-  padding-bottom: 28rem; }
+  padding-bottom: 20rem; }
   .clients__title__image {
     margin-bottom: 1.25rem; }
   .clients__description {
@@ -1185,7 +1190,7 @@ img {
       .clients__card__size::before {
         margin-right: 14px;
         content: "";
-        background-image: url("/img/clients/size.svg");
+        background-image: url("../img/clients/size.svg");
         background-size: 32px 32px;
         width: 32px;
         height: 32px;
@@ -1200,7 +1205,7 @@ img {
       .clients__card__time::before {
         margin-right: 10px;
         content: "";
-        background-image: url("/img/clients/time.svg");
+        background-image: url("../img/clients/time.svg");
         background-size: 32px 32px;
         width: 32px;
         height: 32px;
@@ -1389,9 +1394,14 @@ img {
       width: 100%; }
     .footer__menu {
       display: none; }
+    .footer__contacts__phone {
+      display: block;
+      flex-basis: 100%; }
+    .footer__contacts__address {
+      max-width: 25rem; }
     .footer__map {
       order: -1;
-      min-height: 25rem;
+      height: 23rem;
       width: 100%; }
   #controlPolicyCheckbox-error {
     margin-left: 5%;
